@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/cekstatus.css') }}">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-     <link rel="icon" href="{{ asset('assets/images/viel.png') }}" type="image/x-icon">
 </head>
 <body>
     <!-- Navbar -->
