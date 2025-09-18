@@ -1,0 +1,97 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table-container h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #002770;
+  color: #fff;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* CSS untuk tombol yang berupa link */
+.btn-verify {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;  /* Warna latar belakang tombol */
+    color: white;  /* Warna teks */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;  /* Menghapus garis bawah */
+    transition: background-color 0.3s;  /* Animasi transisi background */
+}
+
+.btn-verify:hover {
+    background-color: #0056b3;  /* Warna saat hover */
+    cursor: pointer;  /* Ganti kursor saat hover */
+}
+
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background-color: #2196F3;
+}
+
+.btn-delete {
+  background-color: #f44336;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

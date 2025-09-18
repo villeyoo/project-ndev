@@ -1,0 +1,133 @@
+
+
+/* =========================
+   Tabs Section
+========================= */
+.kotak {
+    display: block; /* bukan flex row */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+/* Tab buttons di atas */
+.tab-buttons {
+    display: flex;
+    justify-content: center; /* tombol di tengah */
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+/* Tombol */
+.tab-btn {
+    padding: 10px 20px;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    color: #0d6efd;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* Form di bawah tombol */
+.tab-form {
+    display: none;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.tab-form.active {
+    display: block;
+}
+
+/* =========================
+   Tab Forms
+========================= */
+.tab-form {
+    display: none;
+    background-color: #fff;
+    padding: 30px;
+  
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.tab-form.active {
+    display: block;
+}
+
+.tab-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.tab-form input,
+.tab-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+      font-family: 'Poppins';
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.tab-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.tab-form button {
+    padding: 10px 25px;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+      font-family: 'Poppins';
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.tab-form button:hover {
+    background-color: #0b5ed7;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #0d6efd;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

@@ -1,0 +1,124 @@
+/* Styling untuk Label */
+label {
+    font-size: 1rem;          /* Ukuran font label */
+    font-weight: bold;        /* Membuat font label menjadi tebal */
+    margin-bottom: 8px;       /* Memberikan jarak antara label dan input */
+      font-family: 'Poppins';
+    display: block;           /* Membuat label menjadi block element */
+    color: #333;              /* Warna teks label */
+}
+
+/* Styling untuk Input */
+input[type="text"] {
+    width: 100%;              /* Lebar penuh untuk input */
+    padding: 10px;            /* Memberikan padding di dalam input */
+    margin-bottom: 15px;      /* Memberikan jarak antara input dan tombol */
+    border-radius: 5px;       /* Menambahkan border radius untuk sudut melengkung */
+    font-family: 'Poppins';
+    border: 1px solid #ccc;   /* Warna border yang lebih soft */
+    font-size: 1rem;          /* Ukuran font di dalam input */
+}
+
+/* Styling untuk Button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+      font-family: 'Poppins';
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Styling untuk Status Result */
+.status-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.status-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.status-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.status-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Styling untuk Button */
+.btn-confirm {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-confirm:hover {
+    background-color: #0056b3;
+}
+
+/* Card Pengumuman */
+.announcement-container {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    margin: 20px auto;
+}
+
+.announcement-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Pending Status */
+.announcement-container.pending {
+    background-color: #f9e06e;
+    color: #856404;
+    border: 1px solid #e2c64d;
+}
+
+/* Accepted Status */
+.announcement-container.accepted {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #28a745;
+}
+
+/* Rejected Status */
+.announcement-container.rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #dc3545;
+}

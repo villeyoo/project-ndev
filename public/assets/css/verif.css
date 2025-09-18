@@ -1,0 +1,76 @@
+.verif-card {
+    width: 100%;
+    max-width: 90%; /* Lebar card yang lebih ramping */
+    margin: 30px auto; /* Menyelaraskan card ke tengah */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Rounded corners untuk card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.verif-card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px; /* Rounded corners untuk body */
+}
+
+.verif-info-item {
+    margin-bottom: 15px;
+}
+
+.verif-info-item p {
+    text-align: left;
+    font-size: 16px;
+    color: #000; /* Black color for the parameters */
+}
+
+.verif-status-form {
+    margin-top: 20px;
+}
+
+.verif-status-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.verif-status-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners untuk select */
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.verif-btn-confirm, .verif-btn-cancel {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+}
+
+.verif-btn-confirm {
+    background-color: #28a745;
+    color: white;
+}
+
+.verif-btn-confirm:hover {
+    background-color: #218838;
+}
+
+.verif-btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.verif-btn-cancel:hover {
+    background-color: #c82333;
+}

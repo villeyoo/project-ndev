@@ -1,0 +1,87 @@
+/* Reset beberapa properti */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Lebarkan card */
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+  color: #000000; /* Biru sesuai tema */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000; /* Biru sesuai tema */
+  font-family: 'Poppins'
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: 'Poppins'
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Poppins';
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff; /* Biru ketika fokus */
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: 'Poppins';
+  background-color: #007bff; /* Biru sesuai tema */
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #0056b3; /* Biru lebih gelap saat hover */
+}
