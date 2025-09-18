@@ -43,9 +43,9 @@
     <section class="kotak">
     <!-- Tab Buttons -->
     <div class="tab-buttons">
-        <button class="tab-btn active" data-tab="creator">Konten Creator</button>
+      <!--  <button class="tab-btn active" data-tab="creator">Konten Creator</button> -->
         <button class="tab-btn" data-tab="programmer">Scripter</button>
-        <button class="tab-btn" data-tab="designer">Polisi</button>
+       <!-- <button class="tab-btn" data-tab="designer">Polisi</button> -->
     </div>
 
     <!-- Tab Forms -->
