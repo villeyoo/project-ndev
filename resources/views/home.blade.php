@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NDEV Studio</title>
-   @vite(['resources/css/style.css', 'resources/js/script.js'])
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -66,5 +66,6 @@
         <p>Kami membuat game di Roblox dan Unity, dan selalu antusias mengeksplorasi ide-ide baru. Selain menciptakan game sendiri, kami juga terbuka untuk bekerja sama dan membantu mengembangkan konsep game Anda menjadi pengalaman yang seru dan menyenangkan bagi para pemain.</p>
     </section>
 
+    <script src="{{ asset('assets/js/script.js') }}"></script>
 </body>
 </html>
