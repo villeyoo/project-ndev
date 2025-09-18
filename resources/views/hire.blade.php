@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/hire.css') }}">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <link rel="icon" href="{{ asset('assets/images/viel.png') }}" type="image/x-icon">
 </head>
 <body>
 

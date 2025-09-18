@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/lowonganList.css') }}">
+   <link rel="icon" href="{{ asset('assets/images/viel.png') }}" type="image/x-icon">
 </head>
 <body>
   <!-- Sidebar -->
