@@ -43,9 +43,35 @@
         </div>
       </div>
 
-      <div class="panel">
-        <h3>Aktivitas Terbaru</h3>
-        <ul>
+         <div class="panel">
+  <h3>Daftar Bug</h3>
+  <ul class="bug-list">
+    @forelse($bugs as $bug)
+      <li>
+        <div>
+          <strong>{{ $bug->judul }}</strong>
+          <div class="desc">{{ $bug->deskripsi }}</div>
+          <small class="date">
+            Prioritas: <span class="prio {{ strtolower($bug->prioritas) }}">
+              {{ $bug->prioritas }}
+            </span> |
+            {{ \Carbon\Carbon::parse($bug->tanggal)->format('d M Y') }}
+          </small>
+        </div>
+        <div class="bug-actions">
+        <form action="{{ route('bugs.delete', $bug->id) }}" method="POST" style="display:inline;">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="done" onclick="return confirm('Tandai selesai & hapus?')">Selesai</button>
+        </form>
+    </div>
+      </li>
+    @empty
+      <li>Tidak ada bug yang tercatat.</li>
+    @endforelse
+  </ul>
+</div>
+
           
         </ul>
       </div>

@@ -3,6 +3,7 @@
   <ul class="menu">
     <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
     <li><a href="{{ route('lowongan.create') }}">Tambah Lowongan</a></li>
+      <li><a href="{{ route('bug.index') }}">Tambah Bug</a></li>
     <li><a href="{{ route('lowongan.list') }}">List Lowongan</a></li>
     <li><a href="{{ route('scripter.index') }}">Scripter</a></li>
     <li><a href="{{ route('polisi.index') }}">Polisi</a></li>

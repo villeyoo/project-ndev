@@ -9,6 +9,7 @@ use App\Http\Controllers\ScripterController;
 use App\Http\Controllers\PolisiController;
 use App\Http\Controllers\StatusController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BugController;
 
 Route::get('/', function () {
     return view('home');
@@ -118,3 +119,10 @@ Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
 // Rute untuk halaman dashboard (hanya untuk pengguna yang sudah login)
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::post('/bug/create', [BugController::class, 'store'])->name('bug.create');
+
+// Jika mau menampilkan daftar bug:
+Route::get('/bug', [BugController::class, 'index'])->name('bug.index');
+
+Route::delete('/bugs/{id}', [AdminController::class, 'deleteBug'])->name('bugs.delete');

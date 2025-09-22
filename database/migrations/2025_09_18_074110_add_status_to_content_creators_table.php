@@ -11,7 +11,7 @@ class AddStatusToContentCreatorsTable extends Migration
         Schema::table('content_creators', function (Blueprint $table) {
             // Menambahkan kolom status dengan default 'pending'
             $table->enum('status', ['pending', 'diterima', 'ditolak'])->default('pending');
-        });git
+        });
     }
 
     public function down()
