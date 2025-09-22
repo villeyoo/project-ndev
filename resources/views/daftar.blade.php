@@ -32,7 +32,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Daftar Posisi Yang Tersedia!<br></h1>
-            <p>saat ini posisi yang tersedia hanya scripter</p>
+            <p>saat ini posisi yang tersedia hanya scripter dan klaim title content creator</p>
             <p>jika kamu mendaftar selain scripter akan otomatis di tolak!</p>
             
         </div>
@@ -45,7 +45,7 @@
     <section class="kotak">
     <!-- Tab Buttons -->
     <div class="tab-buttons">
-        <button class="tab-btn active" data-tab="creator">Content Creator</button>
+        <button class="tab-btn active" data-tab="creator">Konten Creator</button>
         <button class="tab-btn" data-tab="programmer">Scripter</button>
         <button class="tab-btn" data-tab="designer">Polisi</button>
     </div>
