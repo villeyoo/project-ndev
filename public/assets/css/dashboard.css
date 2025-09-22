@@ -177,14 +177,32 @@ body {
   transition: background 0.2s;
 }
 
-.bug-actions .done {
-  background: #4caf50;
-  color: #fff;
+/* Container tombol bug-actions */
+.bug-actions {
+  display: flex;
+  gap: 8px;              /* jarak antar tombol */
+  align-items: center;
 }
-.bug-actions .done:hover { background: #43a047; }
 
-.bug-actions .delete {
-  background: #e53935;
+/* Tombol Selesai */
+.bug-actions .done {
+  background: #4caf50;   /* hijau utama */
   color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
 }
-.bug-actions .delete:hover { background: #d32f2f; }
+
+.bug-actions .done:hover {
+  background: #43a047;   /* hijau sedikit lebih gelap saat hover */
+  transform: translateY(-2px);
+}
+
+.bug-actions .done:active {
+  background: #388e3c;   /* warna klik */
+  transform: translateY(0);
+}

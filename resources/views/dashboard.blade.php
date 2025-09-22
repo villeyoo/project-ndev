@@ -59,12 +59,15 @@
           </small>
         </div>
         <div class="bug-actions">
-        <form action="{{ route('bugs.delete', $bug->id) }}" method="POST" style="display:inline;">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class="done" onclick="return confirm('Tandai selesai & hapus?')">Selesai</button>
-        </form>
-    </div>
+            <form action="{{ route('bugs.delete', $bug->id) }}" method="POST" style="display:inline;">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="done" onclick="return confirm('Tandai selesai & hapus?')">
+                    Selesai
+                </button>
+            </form>
+        </div>
+
       </li>
     @empty
       <li>Tidak ada bug yang tercatat.</li>
